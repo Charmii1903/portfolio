@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakhi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 overflow-x-hidden font-Ovo leading-8">
+    <!-- Navbar -->
+    <nav class="w-full  bg-opacity-50 px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between z-50">
+        <!-- Logo -->
+        <a href="./index.html"><img src="./images/logo.png" alt="" class="w-20 sm:w-36 cursor-pointer"></a>
+        <!-- Centered Navigation Menu -->
+        <ul class="hidden md:flex flex-1 ml-40 mr-40 justify-center items-center gap-4 sm:gap-6 
+        lg:gap-10 rounded-full px-5 py-3 bg-purple-400 bg-opacity-50 font-Ovo">
+            <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+            <li><a href="index.html" class="hover:text-purple-700">About Me</a></li>
+            <li><a href="index.html" class="hover:text-purple-700">My Work</a></li>
+        </ul>
+
+        <!-- Contact Button and Icon -->
+        <div class="flex items-center gap-3">
+            <a href="contact.html"
+                class="hidden lg:flex items-center gap-3 px-6 sm:px-10 py-2.5 rounded-full shadow-sm bg-purple-300 hover:bg-purple-400">
+                Contact <img src="./images/contact.png" alt="Contact" class="w-6">
+            </a>
+            <button class="block md:hidden ml-3 w-8" onclick="openMenu()">
+                <img src="./images/menu.png" alt="Menu" >
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div>
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0
+             bottom-0 w-64 z-50 h-screen bg-purple-200 transition duration-500 font-Ovo">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/cross.png" alt="" class="w-7 cursor-pointer">
+            </div>
+            <li><a href="./index.html" onclick="closeMenu()" class="py-2">Home</a></li>
+            <li><a href="./wisecart.html" onclick="closeMenu()" class="py-2">Wisecart(P-1)</a></li>
+            <li><a href="./docusync.html" onclick="closeMenu()" class="py-2">Docusync(P-2)</a></li>
+            <li><a href="./visucept.html" onclick="closeMenu()" class="py-2">Visucept(P-4)</a></li>
+            <li><a href="./contact.html" onclick="closeMenu()" class="py-2">Contact me</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Header Section -->
+    <header class="py-6 text-center shadow-sm">
+        <div class="flex items-center justify-center">
+            <img src="./images/sakhi_logo.png" alt="Logo" class="w-10 mr-2">
+            <h1 class="text-3xl sm:text-4xl font-bold text-purple-700">
+                Sakhi
+            </h1>
+        </div>
+        <p class="text-base sm:text-lg text-gray-700 mt-2 items-center">An E-commerce platform for Ladies' apparel</p>
+    </header>
+
+    <!-- Video Section -->
+    <section class="my-8 px-6 lg:px-16">
+        <div class="max-w-4xl mx-auto">
+            <video controls controlsList="nodownload" class="w-full rounded-lg shadow-lg">
+                <source src="./images/sakhi_vidd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="bg-white py-12">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold text-purple-700 mb-4">About Sakhi</h2>
+            <p class="text-gray-700 text-sm sm:text-lg">
+                Sakhi is an e-commerce platform specializing in ladies' 
+                garments developed by our team . The project includes a main 
+                user-facing website for browsing and purchasing, along with a 
+                comprehensive admin panel for managing products, orders, 
+                and customer interactions. 
+            </p>
+            <h3 class="text-2xl tetxt-bold">Technologies used in sakhi : </h3>
+            <p>Frontend : Nextjs, Tailwindcss </p>
+            <p class="mb-24">Backend : Nodejs, MongoDB </p>
+        </div>
+
+    </section>
+
+    <!-- ---------------footer------------------- -->
+
+    <div class="scroll-mt-20">
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+            <p>&#xA9; Charmi Solanki. All rights reserved. </p>
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                <li><a href="https://www.linkedin.com/in/charmi-solanki-71aa362b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="flex">
+                    <img src="./images/linkedin.png" alt="" class="w-6">
+                    linkedin</a></li>
+                <li><a href="https://github.com/Charmii1903" class="flex">
+                <img src="./images/github.png" alt="" class="w-6">
+                Github</a></li>
+            </ul>
+        </div>
+    <script src="./script.js" defer></script>
+</body>
+</html>
