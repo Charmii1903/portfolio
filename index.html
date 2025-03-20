@@ -15,32 +15,33 @@
 
 
 <body class="bg-slate-100 overflow-x-hidden font-Ovo leading-8 ">
-    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-0.25 flex items-center justify-between z-50 ">
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-0.25 flex items-center justify-between z-50">
         <!-- Logo -->
-        <a href="./index.html"><img src="./images/logo.png" alt="" class="w-20 sm:w-36 cursor-pointer"></a>
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="" class="w-20 sm:w-36 cursor-pointer hover:scale-110 transition duration-300">
+        </a>
+    
         <!-- Centered Navigation Menu -->
         <ul class="hidden md:flex flex-1 ml-40 mr-40 justify-center items-center gap-4 sm:gap-6 
         lg:gap-10 rounded-full px-5 py-3 bg-purple-300 shadow-sm bg-opacity-50 font-Ovo dark:bg-purple-300">
-            <li><a href="#top" class="hover:text-purple-700">Home</a></li>
-            <li><a href="#about" class="hover:text-purple-700">About me</a></li>
-            <!-- <li><a href="#services" class="hover:text-purple-700">Services</a></li> -->
-            <li><a href="#work" class="hover:text-purple-700">My work</a></li>
+            <li><a href="#top" class="hover:text-purple-700  hover:scale-110 transition duration-300 ">Home</a></li>
+            <li><a href="#about" class="hover:text-purple-700 hover:scale-110 transition duration-300 ">About me</a></li>
+            <li><a href="#work" class="hover:text-purple-700 hover:scale-110 transition duration-300 ">My work</a></li>
         </ul>
-
+    
         <!-- Contact Button and Icon -->
         <div class="flex items-center gap-3">
-            <!-- <button onclick="toggleTheme()">
-                <img src="./images/moon.png" alt="" class="w-8">
-            </button> -->
             <a href="contact.html"
-                class="hidden lg:flex items-center gap-3 px-6 sm:px-10 py-2.5 border-gray-200 rounded-full shadow-sm bg-purple-300 hover:bg-purple-400 font-Ovo">
+                class="hidden lg:flex items-center gap-3 px-6 sm:px-10 py-2.5 border-gray-200 rounded-full shadow-sm 
+                bg-purple-300 hover:bg-purple-400 hover:scale-105 transition duration-300 ease-in-out font-Ovo">
                 Contact <img src="./images/contact.png" alt="" class="w-6">
             </a>
-            <button class="block md:hidden ml-3 w-8" onclick="openMenu()">
+            <button class="block md:hidden ml-3 w-8 hover:rotate-90 transition duration-300 ease-in-out" onclick="openMenu()">
                 <img src="./images/menu.png" alt="">
             </button>
         </div>
     </nav>
+    
 
     <!-- Mobile Menu -->
     <div>
@@ -59,34 +60,33 @@
     </div>
 
     <!-- Header -->
-    <div
-    class="w-11/12 max-w-7xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-6 mt-16 md:mt-0">
-    <!-- Profile Image -->
-    <img src="./images/profile.jpeg" alt="Profile Picture" class="rounded-full w-28 sm:w-36 md:w-40 lg:w-48">
-
-    <!-- Introduction -->
-    <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl mb-3 font-Ovo">
-        Hi! I'm Charmi Solanki
-    </h3>
-
-    <!-- Description -->
-    <h2
-        class="text-sm sm:text-base md:text-lg lg:text-xl mx-6 sm:mx-12 md:mx-28 text-gray-700 font-Ovo leading-relaxed">
-        I’m a fresher with expertise in web development and proficiency in JavaScript frameworks. I have built projects
-        implementing JavaScript frameworks and excel in backend development with Node.js and frontend development with
-        React.js and Next.js. And I also design websites and apps. 
-    </h2>
-</div>
-
-<!-- Resume Download Button -->
-<div class="flex flex-col md:flex-row justify-center items-center gap-4 -mt-10 md:-mt-16">
-    <a href="./CharmiResume.pdf" download
-        class="flex px-6 sm:px-8 md:px-10 py-1 md:py-3 border rounded-full border-gray-500 items-center
-         gap-2 bg-purple-300 shadow-sm hover:bg-purple-400 transition duration-300">
-        My Resume
-        <img src="./images/download.png" alt="Download Icon" class="w-5 md:w-6">
-    </a>
-</div>
+    <div class="w-11/12 max-w-7xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <!-- Profile Image -->
+        <img src="./images/profile.jpeg" alt="Profile Picture" class="rounded-full w-28 sm:w-36 md:w-40 lg:w-48">
+    
+        <!-- Introduction -->
+        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 font-Ovo">
+            Hi! I'm Charmi Solanki
+        </h3>
+    
+        <!-- Description -->
+        <h2 class="text-sm sm:text-base md:text-lg lg:text-xl mx-6 sm:mx-12 md:mx-28 text-gray-700 font-Ovo leading-normal">
+            I’m a fresher with expertise in web development and proficiency in JavaScript frameworks. I have built projects
+            implementing JavaScript frameworks and excel in backend development with Node.js and frontend development with
+            React.js and Next.js. And I also design websites and apps.
+        </h2>
+    
+        <!-- Resume Download Button -->
+        <div class="mt-4">
+            <a href="./CharmiResume.pdf" download
+                class="flex px-6 sm:px-8 md:px-10 py-2 md:py-3 border rounded-full border-gray-500 items-center
+             gap-2 bg-purple-300 shadow-sm hover:bg-purple-400 transition duration-300">
+                My Resume
+                <img src="./images/download.png" alt="Download Icon" class="w-5 md:w-6">
+            </a>
+        </div>
+    </div>
+    
 
     <!---About me---->
     <div id="about" class="w-full px-[12%] py-28 ">
@@ -351,7 +351,7 @@
      <div class="scroll-mt-20">
         <div class="text-center">
             <div class="w-max flex items-center gap-2 mx-auto pt-2">
-                <img src="./images/mail_icon.png" alt="" class="w-6 ">
+                <img src="./images/mail_icon.png" alt="" class="w-10 ">
                 charmisolanki1907@gmail.com
             </div>
         </div>
@@ -359,10 +359,10 @@
             <p>&#xA9; Charmi Solanki. All rights reserved. </p>
             <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
                 <li><a href="https://www.linkedin.com/in/charmi-solanki-71aa362b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="flex">
-                    <img src="./images/link.png" alt="" class="w-6">
+                    <img src="./images/link.png" alt="" class="w-8">
                     linkedin</a></li>
                 <li><a href="https://github.com/Charmii1903" class="flex">
-                <img src="./images/git.png" alt="" class="w-6">
+                <img src="./images/git.png" alt="" class="w-8">
                 Github</a></li>
             </ul>
         </div>
